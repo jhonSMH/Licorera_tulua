@@ -1,0 +1,212 @@
+[
+    {
+        "id": "licores-01",
+        "titulo": "Blanco del Valle",
+        "imagen": "./img/licores/aguardiente.jpg",
+        "categoria": {
+            "nombre": "licores",
+            "id": "licores"
+        },
+        "precio": 37500
+    },
+    {
+        "id": "licores-02",
+        "titulo": "Buchanan's",
+        "imagen": "./img/licores/buchanans.jpg",
+        "categoria": {
+            "nombre": "licores",
+            "id": "licores"
+        },
+        "precio": 200000
+    },
+    {
+        "id": "licores-03",
+        "titulo": "Ginebra",
+        "imagen": "./img/licores/ginebra.jpg",
+        "categoria": {
+            "nombre": "Licores",
+            "id": "licores"
+        },
+        "precio": 155000
+    },
+    {
+        "id": "licores-04",
+        "titulo": "Tequila_don_julio",
+        "imagen": "./img/licores/tequila_don_julio.jpg",
+        "categoria": {
+            "nombre": "licores",
+            "id": "licores"
+        },
+        "precio": 230000
+    },
+    {
+        "id": "cervezas-01",
+        "titulo": "Corona",
+        "imagen": "./img/cervezas/corona.jpg",
+        "categoria": {
+            "nombre": "cervezas",
+            "id": "cervezas"
+        },
+        "precio": 5000
+    },
+    {
+        "id": "cervezas-02",
+        "titulo": "Poker",
+        "imagen": "./img/cervezas/poker.jpg",
+        "categoria": {
+            "nombre": "cervezas",
+            "id": "cervezas"
+        },
+        "precio": 2200
+    },
+    {
+        "id": "cervezas-03",
+        "titulo": "Budweiser",
+        "imagen": "./img/cervezas/bws.jpg",
+        "categoria": {
+            "nombre": "cervezas",
+            "id": "cervezas"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "cervezas-04",
+        "titulo": "Heineken",
+        "imagen": "./img/cervezas/heineken.jpg",
+        "categoria": {
+            "nombre": "cervezas",
+            "id": "cervezas"
+        },
+        "precio": 3000
+    },
+    {
+        "id": "vinos-01",
+        "titulo": "Begani",
+        "imagen": "./img/vinos/begani.jpg",
+        "categoria": {
+            "nombre": "vinos",
+            "id": "vinos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "vinos-02",
+        "titulo": "Carmen",
+        "imagen": "./img/vinos/carmen.jpg",
+        "categoria": {
+            "nombre": "vinos",
+            "id": "vinos"
+        },
+        "precio": 43900
+    },
+    {
+        "id": "vinos-03",
+        "titulo": "Garugele ",
+        "imagen": "./img/vinos/garugele.jpg",
+        "categoria": {
+            "nombre": "vinos",
+            "id": "vinos"
+        },
+        "precio": 50000
+    },
+    {
+        "id": "vinos-04",
+        "titulo": "Penfolds",
+        "imagen": "./img/vinos/penfolds.jpg",
+        "categoria": {
+            "nombre": "vinos",
+            "id": "vinos"
+        },
+        "precio": 125000
+    },
+    {
+        "id": "bebidas_sin_alcohol-01",
+        "titulo": "Agua",
+        "imagen": "./img/bebidas_sin_alcohol/agua.jpg",
+        "categoria": {
+            "nombre": "bebidas_sin_alcohol",
+            "id": "bebidas_sin_alcohol"
+        },
+        "precio": 2000
+    },
+    {
+        "id": "bebidas_sin_alcohol-02",
+        "titulo": "Energizantes",
+        "imagen": "./img/bebidas_sin_alcohol/gatorade.jpg",
+        "categoria": {
+            "nombre": "bebidas_sin_alcohol",
+            "id": "bebidas_sin_alcohol"
+        },
+        "precio": 3300
+    },
+    {
+        "id": "bebidas_sin_alcohol-03",
+        "titulo": "Gaseosas",
+        "imagen": "./img/bebidas_sin_alcohol/hit.jpg",
+        "categoria": {
+            "nombre": "bebidas_sin_alcohol",
+            "id": "bebidas_sin_alcohol"
+        },
+        "precio": 2500
+    },
+    {
+        "id": "bebidas_sin_alcohol-04",
+        "titulo": "Tea",
+        "imagen": "./img/bebidas_sin_alcohol/tea.jpg",
+        "categoria": {
+            "nombre": "bebidas_sin_alcohol",
+            "id": "bebidas_sin_alcohol"
+        },
+        "precio": 2800
+    },
+    {
+        "id": "minimarket-01",
+        "titulo": "Cigarrillo",
+        "imagen": "./img/minimarket/cigarrillo.jpg",
+        "categoria": {
+            "nombre": "minimarket",
+            "id": "minimarket"
+        },
+        "precio": 700
+    },
+    {
+        "id": "minimarket-02",
+        "titulo": "Chocolatina",
+        "imagen": "./img/minimarket/jet.jpg",
+        "categoria": {
+            "nombre": "minimarket",
+            "id": "minimarket"
+        },
+        "precio": 1500
+    },
+    {
+        "id": "minimarket-03",
+        "titulo": "Papas Fritas",
+        "imagen": "./img/minimarket/papas.jpg",
+        "categoria": {
+            "nombre": "minimarket",
+            "id": "minimarket"
+        },
+        "precio": 2500
+    },
+    {
+        "id": "minimarket-04",
+        "titulo": "Chicles",
+        "imagen": "./img/minimarket/trident.jpg",
+        "categoria": {
+            "nombre": "minimarket",
+            "id": "minimarket"
+        },
+        "precio": 700
+    },
+    {
+        "id": "Drogas-01",
+        "titulo": "Que viva la weed!!",
+        "imagen": "./img/Drogas/Marihuana.jpg",
+        "categoria": {
+            "nombre": "Drogas",
+            "id": "Drogas"
+        },
+        "precio": 3000
+    }
+]
