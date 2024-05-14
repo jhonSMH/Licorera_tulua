@@ -11,16 +11,17 @@
 </head>
 <body>
         <div id="floatingWindow" class="floating-window">
-        <span class="close" id="closeButton">&times;</span>
-        <h2>Bienvenido</h2>
-        <div class="image-container">
-            <img scr="./fiesta.jpg" alt="Imagen">
+            <span class="close" id="closeButton">&times;</span>
+            <h2>Bienvenido</h2>
+            <div class="image-container">
+                <img scr="./fiesta.jpg" alt="Imagen">
+            </div>
+            <p class="message-top">Para ingresar a este sitio web debes ser mayor de edad</p>
+            <button id="button1" class="button1">Eres mayor de +18</button>
+            <button id="button2" class="button2">Eres menor de -18</button>
+            <p class="message-top">El exceso de alcohol es perjudicial para la salud. Prohíbase el expendio de alcohol a menores de edad.</p>
         </div>
-        <p class="message-top">Para ingresar a este sitio web debes ser mayor de edad</p>
-        <button id="button1" class="button1">Eres mayor de +18</button>
-        <button id="button2" class="button2">Eres menor de -18</button>
-        <p class="message-top">El exceso de alcohol es perjudicial para la salud. Prohíbase el expendio de alcohol a menores de edad.</p>
-          </div>
+
     <div class="wrapper">
         <header class="header-mobile">
             <h1 class="logo">Licorera Tulua</h1>
@@ -28,6 +29,7 @@
                 <i class="bi bi-list"></i>
             </button>
         </header>
+
         <aside>
             <button class="close-menu" id="close-menu">
                 <i class="bi bi-x"></i>
@@ -38,22 +40,22 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-check2-circle"></i> Todos los productos</button>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-check2-circle"></i> Todos los productos </button>
                     </li>
                     <li>
-                        <button id="licores" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Licores</button>
+                        <button id="Licores" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Licores </button>
                     </li>
                     <li>
-                        <button id="vinos" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Vinos</button>
+                        <button id="Vinos" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Vinos </button>
                     </li>
                     <li>
-                        <button id="cervezas" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Cervezas</button>
+                        <button id="Cervezas" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Cervezas </button>
                     </li>
                     <li>
-                        <button id="bebidas_sin_alcohol" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Bebidas sin alcohol</button>
+                        <button id="Bebidas Sin Alcohol" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Bebidas sin alcohol </button>
                     </li>
                     <li>
-                        <button id="minimarket" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Minimarket</button>
+                        <button id="Minimarket" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Minimarket </button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.html">
@@ -63,9 +65,10 @@
                 </ul>
             </nav>
             <footer>
-                <p class="texto-footer">© 2023 Licores Tulua</p>
+                <p class="texto-footer">© 2024 Licores Tulua</p>
             </footer>
         </aside>
+        
         <main>
             <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">
@@ -73,9 +76,11 @@
             </div>
         </main>
     </div>
-    
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/carrito.js"></script>
+
 </body>
 </html>

@@ -4,8 +4,8 @@
         "titulo": "Blanco del Valle",
         "imagen": "./img/licores/aguardiente.jpg",
         "categoria": {
-            "nombre": "licores",
-            "id": "licores"
+            "nombre": "Licores",
+            "id": "Licores"
         },
         "precio": 37500
     },
@@ -14,8 +14,8 @@
         "titulo": "Buchanan's",
         "imagen": "./img/licores/buchanans.jpg",
         "categoria": {
-            "nombre": "licores",
-            "id": "licores"
+            "nombre": "Licores",
+            "id": "Licores"
         },
         "precio": 200000
     },
@@ -25,17 +25,17 @@
         "imagen": "./img/licores/ginebra.jpg",
         "categoria": {
             "nombre": "Licores",
-            "id": "licores"
+            "id": "Licores"
         },
         "precio": 155000
     },
     {
         "id": "licores-04",
-        "titulo": "Tequila_don_julio",
+        "titulo": "Tequila Don Julio",
         "imagen": "./img/licores/tequila_don_julio.jpg",
         "categoria": {
-            "nombre": "licores",
-            "id": "licores"
+            "nombre": "Licores",
+            "id": "Licores"
         },
         "precio": 230000
     },
@@ -44,8 +44,8 @@
         "titulo": "Corona",
         "imagen": "./img/cervezas/corona.jpg",
         "categoria": {
-            "nombre": "cervezas",
-            "id": "cervezas"
+            "nombre": "Cervezas",
+            "id": "Cervezas"
         },
         "precio": 5000
     },
@@ -54,8 +54,8 @@
         "titulo": "Poker",
         "imagen": "./img/cervezas/poker.jpg",
         "categoria": {
-            "nombre": "cervezas",
-            "id": "cervezas"
+            "nombre": "Cervezas",
+            "id": "Cervezas"
         },
         "precio": 2200
     },
@@ -64,8 +64,8 @@
         "titulo": "Budweiser",
         "imagen": "./img/cervezas/bws.jpg",
         "categoria": {
-            "nombre": "cervezas",
-            "id": "cervezas"
+            "nombre": "Cervezas",
+            "id": "Cervezas"
         },
         "precio": 3000
     },
@@ -74,8 +74,8 @@
         "titulo": "Heineken",
         "imagen": "./img/cervezas/heineken.jpg",
         "categoria": {
-            "nombre": "cervezas",
-            "id": "cervezas"
+            "nombre": "Cervezas",
+            "id": "Cervezas"
         },
         "precio": 3000
     },
@@ -84,8 +84,8 @@
         "titulo": "Begani",
         "imagen": "./img/vinos/begani.jpg",
         "categoria": {
-            "nombre": "vinos",
-            "id": "vinos"
+            "nombre": "Vinos",
+            "id": "Vinos"
         },
         "precio": 1000
     },
@@ -94,8 +94,8 @@
         "titulo": "Carmen",
         "imagen": "./img/vinos/carmen.jpg",
         "categoria": {
-            "nombre": "vinos",
-            "id": "vinos"
+            "nombre": "Vinos",
+            "id": "Vinos"
         },
         "precio": 43900
     },
@@ -104,8 +104,8 @@
         "titulo": "Garugele ",
         "imagen": "./img/vinos/garugele.jpg",
         "categoria": {
-            "nombre": "vinos",
-            "id": "vinos"
+            "nombre": "Vinos",
+            "id": "Vinos"
         },
         "precio": 50000
     },
@@ -114,8 +114,8 @@
         "titulo": "Penfolds",
         "imagen": "./img/vinos/penfolds.jpg",
         "categoria": {
-            "nombre": "vinos",
-            "id": "vinos"
+            "nombre": "Vinos",
+            "id": "Vinos"
         },
         "precio": 125000
     },
@@ -124,28 +124,28 @@
         "titulo": "Agua",
         "imagen": "./img/bebidas_sin_alcohol/agua.jpg",
         "categoria": {
-            "nombre": "bebidas_sin_alcohol",
-            "id": "bebidas_sin_alcohol"
+            "nombre": "Bebidas Sin Alcohol",
+            "id": "Bebidas Sin Alcohol"
         },
         "precio": 2000
     },
     {
         "id": "bebidas_sin_alcohol-02",
-        "titulo": "Energizantes",
+        "titulo": "Gatorade",
         "imagen": "./img/bebidas_sin_alcohol/gatorade.jpg",
         "categoria": {
-            "nombre": "bebidas_sin_alcohol",
-            "id": "bebidas_sin_alcohol"
+            "nombre": "Bebidas Sin Alcohol",
+            "id": "Bebidas Sin Alcohol"
         },
         "precio": 3300
     },
     {
         "id": "bebidas_sin_alcohol-03",
-        "titulo": "Gaseosas",
+        "titulo": "Jugo Hit",
         "imagen": "./img/bebidas_sin_alcohol/hit.jpg",
         "categoria": {
-            "nombre": "bebidas_sin_alcohol",
-            "id": "bebidas_sin_alcohol"
+            "nombre": "Bebidas Sin Alcohol",
+            "id": "Bebidas Sin Alcohol"
         },
         "precio": 2500
     },
@@ -154,8 +154,8 @@
         "titulo": "Tea",
         "imagen": "./img/bebidas_sin_alcohol/tea.jpg",
         "categoria": {
-            "nombre": "bebidas_sin_alcohol",
-            "id": "bebidas_sin_alcohol"
+            "nombre": "Bebidas Sin Alcohol",
+            "id": "Bebidas Sin Alcohol"
         },
         "precio": 2800
     },
@@ -164,8 +164,8 @@
         "titulo": "Cigarrillo",
         "imagen": "./img/minimarket/cigarrillo.jpg",
         "categoria": {
-            "nombre": "minimarket",
-            "id": "minimarket"
+            "nombre": "Minimarket",
+            "id": "Minimarket"
         },
         "precio": 700
     },
@@ -174,8 +174,8 @@
         "titulo": "Chocolatina",
         "imagen": "./img/minimarket/jet.jpg",
         "categoria": {
-            "nombre": "minimarket",
-            "id": "minimarket"
+            "nombre": "Minimarket",
+            "id": "Minimarket"
         },
         "precio": 1500
     },
@@ -184,8 +184,8 @@
         "titulo": "Papas Fritas",
         "imagen": "./img/minimarket/papas.jpg",
         "categoria": {
-            "nombre": "minimarket",
-            "id": "minimarket"
+            "nombre": "Minimarket",
+            "id": "Minimarket"
         },
         "precio": 2500
     },
@@ -194,19 +194,9 @@
         "titulo": "Chicles",
         "imagen": "./img/minimarket/trident.jpg",
         "categoria": {
-            "nombre": "minimarket",
-            "id": "minimarket"
+            "nombre": "Minimarket",
+            "id": "Minimarket"
         },
         "precio": 700
-    },
-    {
-        "id": "Drogas-01",
-        "titulo": "Que viva la weed!!",
-        "imagen": "./img/Drogas/Marihuana.jpg",
-        "categoria": {
-            "nombre": "Drogas",
-            "id": "Drogas"
-        },
-        "precio": 3000
     }
 ]
