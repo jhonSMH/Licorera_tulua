@@ -2,7 +2,7 @@
 
 :root {
     --clr-main: #26670c;
-    --clr-main-light:  #2fff00;
+    --clr-main-light: #2fff00;
     --clr-white: #ececec;
     --clr-gray: #e2e2e2;
     --clr-red: #707e7e;
@@ -15,7 +15,17 @@
     font-family: 'Rubik', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+input,
+textarea,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -103,8 +113,8 @@ aside {
     box-shadow: 0 -1rem 0 var(--clr-white);
 }
 
-.boton-menu > i.bi-hand-index-thumb-fill,
-.boton-menu > i.bi-hand-index-thumb {
+.boton-menu>i.bi-hand-index-thumb-fill,
+.boton-menu>i.bi-hand-index-thumb {
     transform: rotateZ(90deg);
 }
 
@@ -149,8 +159,8 @@ main {
 }
 
 .producto-imagen {
-    width:200px;
-    height:200px;
+    width: 200px;
+    height: 200px;
     border-radius: 1rem;
 }
 
@@ -353,7 +363,8 @@ main {
         color: var(--clr-gray);
     }
 
-    .open-menu, .close-menu {
+    .open-menu,
+    .close-menu {
         background-color: transparent;
         color: var(--clr-gray);
         border: 0;
@@ -401,6 +412,7 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
+
 /*estilos de la ventana flotante si es mayor de edad */
 /* Floating window styles */
 .floating-window {
@@ -417,7 +429,7 @@ main {
     text-align: center;
 }
 
-  .close {
+.close {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -429,9 +441,11 @@ main {
     width: 100%;
     height: auto;
 }
+
 /*Estilos para el la ventana flotante*/
 .button1 {
-    background-color: #26670c; /* Color verde */
+    background-color: #26670c;
+    /* Color verde */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -441,12 +455,14 @@ main {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 10px; /* Borde redondeado */
+    border-radius: 10px;
+    /* Borde redondeado */
 }
 
 /* Estilo para el botón de menores de 18 */
 .button2 {
-    background-color: #707e7e; /* Color rojo */
+    background-color: #707e7e;
+    /* Color rojo */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -456,8 +472,10 @@ main {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 10px; /* Borde redondeado */
+    border-radius: 10px;
+    /* Borde redondeado */
 }
+
 /*estilos boton de busqueda*/
 .search-container {
     position: fixed;
@@ -466,12 +484,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1; /* Un valor menor que el de la ventana emergente */
+    z-index: 1;
+    /* Un valor menor que el de la ventana emergente */
     background-color: var(--clr-white);
     padding: 0.5rem;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 overlay {
     position: fixed;
     top: 0;
@@ -507,31 +527,134 @@ overlay {
 #search-button:hover {
     background-color: var(--clr-main-light);
 }
+
 /*Ajuste de la imagen*/
 <style>
-    /* Estilos para la ventana emergente */
-    .floating-window {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        padding: 20px;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 10000; /* Z-index alto para que esté por encima de otros elementos */
-        display: none; /* Inicialmente oculto */
-        max-width: 80%; /* Ancho máximo */
-        max-height: 80%; /* Altura máxima */
-    }
 
-    .image-container {
-        width: 100%;
-        height: auto;
-    }
+/* Estilos para la ventana emergente */
+.floating-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    /* Z-index alto para que esté por encima de otros elementos */
+    display: none;
+    /* Inicialmente oculto */
+    max-width: 80%;
+    /* Ancho máximo */
+    max-height: 80%;
+    /* Altura máxima */
+}
 
-    .image-container img {
-        width: 50%; /* Reducir el ancho al 50% */
-        height: auto; /* Para mantener la proporción de la imagen */
-    }
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 50%;
+    /* Reducir el ancho al 50% */
+    height: auto;
+    /* Para mantener la proporción de la imagen */
+}
+
 </style>
+
+/* Estilo general */
+.disabled {
+    display: none;
+}
+
+/* Estilo Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo de la tarjeta de crédito digital */
+.modal-contenido {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    max-width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.modal-contenido h2 {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.2em;
+}
+
+.modal-contenido .total {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #28a745;
+}
+
+.modal-contenido .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.modal-contenido .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.modal-contenido .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal-contenido .form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.modal-contenido .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-contenido .btn:hover {
+    background-color: #0056b3;
+}
+
+.modal-contenido .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-contenido .cerrar:hover {
+    color: #000;
+}

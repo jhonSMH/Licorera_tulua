@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -59,22 +61,67 @@
                     <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
                             <p>Total:</p>
-                            <p id="total">$3000</p>
+                            <p id="total">$0</p>
                         </div>
                         <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
-
-
-
-
                 </div>
-                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i
-                    class="bi bi-emoji-laughing"></i></p>
+                <p id="carrito-comprado" class="carrito-comprado disabled"><i
+                        class="bi bi-emoji-laughing"></i></p>
+
+                <!-- Modal de Pago -->
+                <div id="modalPago" class="modal">
+                    <div class="modal-contenido">
+                        <span class="cerrar">&times;</span>
+                        <div class="tarjeta">
+                            <div class="tarjeta-cabecera">
+                                <h2>Detalles del Pago</h2>
+                            </div>
+                            <div class="tarjeta-cuerpo">
+                                <div class="tarjeta-info">
+                                    <div class="total" id="totalPago">Total a pagar: $0</div>
+                                    <form id="formularioPago">
+                                        <div class="form-group">
+                                            <label for="nombre">Nombre Propietario</label>
+                                            <input type="text" id="nombre" name="nombre"
+                                                placeholder="Nombre Propietario" pattern="^[A-Za-zñáéíóúüÁÉÍÓÚÜ\s]+$"
+                                                title="Solo se permiten letras y espacios" maxlength="20" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="numeroTarjeta">Número de Tarjeta</label>
+                                            <input type="text" id="numeroTarjeta" name="numeroTarjeta"
+                                                placeholder="################" inputmode="numeric" pattern="\d*" maxlength="16" minlength="16" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="expiracion">Fecha de Expiración</label>
+                                            <input type="date" id="expiracion" name="expiracion" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="###" inputmode="numeric" pattern="\d*" maxlength="3" minlength="3" required>
+                                        </div>
+                                        <button type="submit" class="btn">Pagar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Modal de Pago Exitoso -->
+                <div id="modalExitoso" class="modal">
+                    <div class="modal-contenido">
+                        <span class="cerrar">&times;</span>
+                        <h2>¡Pago Exitoso!</h2>
+                        <p>Gracias por tu compra.</p>
+                    </div>
+                </div>
+
 
             </div>
         </main>
-
-
     </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
@@ -83,4 +130,5 @@
     <script src="./js/menu.js"></script>
 
 </body>
+
 </html>
