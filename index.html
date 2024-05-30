@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,26 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
-        <div id="floatingWindow" class="floating-window">
-            <span class="close" id="closeButton">&times;</span>
-            <h2>Bienvenido</h2>
-            <div class="image-container">
-                <img src="./img/fiesta.jpg" alt="Imagen">
-            </div>
-            <p class="message-top">Para ingresar a este sitio web debes ser mayor de edad</p>
-            <button id="button1" class="button1">Eres mayor de +18</button>
-            <button id="button2" class="button2">Eres menor de -18</button>
-            <p class="message-top">El exceso de alcohol es perjudicial para la salud. Prohíbase el expendio de alcohol a menores de edad.</p>
+    <div id="overlay" class="overlay"></div>
+    <div id="floatingWindow" class="floating-window">
+        <span class="close" id="closeButton">&times;</span>
+        <h2>Bienvenido</h2>
+        <div class="image-container">
+            <img src="./img/fiesta.jpg" alt="Imagen">
         </div>
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Buscar productos...">
-            <button id="search-button" class="button1">Buscar</button>
-        </div>
-        
+        <p class="message-top">Para ingresar a este sitio web debes ser mayor de edad</p>
+        <button id="button1" class="button1">Eres mayor de +18</button>
+        <button id="button2" class="button2">Eres menor de -18</button>
+        <p class="message-top">El exceso de alcohol es perjudicial para la salud. Prohíbase el expendio de alcohol a
+            menores de edad.</p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar productos...">
+        <button id="search-button" class="button1">Buscar</button>
+    </div>
 
     <div class="wrapper">
         <header class="header-mobile">
@@ -45,22 +49,28 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-check2-circle"></i> Todos los productos </button>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-check2-circle"></i>
+                            Todos los productos </button>
                     </li>
                     <li>
-                        <button id="Licores" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Licores </button>
+                        <button id="Licores" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i>
+                            Licores </button>
                     </li>
                     <li>
-                        <button id="Vinos" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Vinos </button>
+                        <button id="Vinos" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Vinos
+                        </button>
                     </li>
                     <li>
-                        <button id="Cervezas" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Cervezas </button>
+                        <button id="Cervezas" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i>
+                            Cervezas </button>
                     </li>
                     <li>
-                        <button id="Bebidas Sin Alcohol" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Bebidas sin alcohol </button>
+                        <button id="Bebidas Sin Alcohol" class="boton-menu boton-categoria"><i
+                                class="bi bi-check2-circle"></i> Bebidas sin alcohol </button>
                     </li>
                     <li>
-                        <button id="Minimarket" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i> Minimarket </button>
+                        <button id="Minimarket" class="boton-menu boton-categoria"><i class="bi bi-check2-circle"></i>
+                            Minimarket </button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.html">
@@ -73,7 +83,7 @@
                 <p class="texto-footer">© 2024 Licores Tulua</p>
             </footer>
         </aside>
-        
+
         <main>
             <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
             <div id="contenedor-productos" class="contenedor-productos">

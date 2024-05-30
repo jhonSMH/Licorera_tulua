@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalPago = document.querySelector("#totalPago");
     const modalExitoso = document.querySelector("#modalExitoso");
 
-
     function cargarProductosCarrito() {
         if (productosEnCarrito && productosEnCarrito.length > 0) {
 
@@ -143,44 +142,47 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-
     function actualizarTotal() {
         const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
         contenedorTotal.innerText = `Total: $${totalCalculado}`;
         totalPago.innerText = `Total a pagar: $${totalCalculado}`;
     }
 
-    // Comprar
+    // Boton comprar
     botonComprar.addEventListener("click", mostrarModalPago);
 
-
-
+    // Mostrar el modal de pago
     function mostrarModalPago() {
-        actualizarTotal();
-        modalPago.style.display = "flex";
+        actualizarTotal(); // Actualizar el total de la compra
+        modalPago.style.display = "flex";c// Hacer visible el modal de pago
     }
 
+    // Vaciar el carrito luego de hacer la compra
+    function vaciarCarro(){
+        productosEnCarrito.length = 0; // Limpiar el arreglo de productos en el carrito
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito)); // Guardar el estado vacío del carrito en el almacenamiento local
+        cargarProductosCarrito(); // Recargar la lista de productos en el carrito desde el almacenamiento local
+    }
+
+    // Agregar un listener a cada span dentro de cerrarModal
     cerrarModal.forEach((span) => {
         span.addEventListener("click", () => {
-            modalPago.style.display = "none";
-            modalExitoso.style.display = "none";
-            window.location.href = 'http://127.0.0.1:5500/index.html?forceGet=true';
+            modalPago.style.display = "none"; // Ocultar el modal de pago
+            modalExitoso.style.display = "none"; // Ocultar el modal de éxito
+            vaciarCarro(); // Vaciar el carrito de compras
+            window.location.href = 'http://127.0.0.1:5500/index.html?forceGet=true'; // Redirigir a la página iniciar del sitio web
         });
     });
 
+    // Agregar un listener al evento submit del formulario de pago
     formularioPago.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        modalPago.style.display = "none";
-        modalExitoso.style.display = "flex";
+        event.preventDefault(); // Prevenir el comportamiento predeterminado del formulario
+        modalPago.style.display = "none"; // Ocultar el modal de pago
+        modalExitoso.style.display = "flex"; // Ocultar el modal de éxito
 
         // Aquí puedes añadir la lógica para procesar el pago
         // Por ahora, simplemente mostramos el mensaje de éxito
-
-        // Vaciar el carrito después de la compra
-        //vaciarCarrito();
     });
-
 
     // Llamar a la función al cargar la página
     window.onload = showPopupOnce;

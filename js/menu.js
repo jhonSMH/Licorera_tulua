@@ -15,41 +15,41 @@ function showPopupOnce() {
     }
 };
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('floatingWindow').style.display = 'block';
-  });
-  
-document.getElementById('closeButton').addEventListener('click', function() {
+});
+
+document.getElementById('closeButton').addEventListener('click', function () {
     alert('Lo siento, debes seleccionar una opción')
-  });
+});
 //Funcion de botones de la ventanan emergente
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const button1 = document.getElementById("button1");
     const floatingWindow = document.getElementById("floatingWindow");
 
-    button1.addEventListener("click", function() {
+    button1.addEventListener("click", function () {
         // Ocultar la ventana flotante al hacer clic en el botón de cerrar
         floatingWindow.style.display = "none";
     });
-document.getElementById('button2').addEventListener('click',function(){
-    alert('Lo siento, no puedes acceder en este momento no puedes acceder')
-})
+    document.getElementById('button2').addEventListener('click', function () {
+        alert('Lo siento, no puedes acceder en este momento no puedes acceder')
+    })
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('floatingWindow').style.display = 'block';
-  });
-  
-  document.getElementById('closeButton').addEventListener('click', function() {
+});
+
+document.getElementById('closeButton').addEventListener('click', function () {
     document.getElementById('floatingWindow').style.display = 'none';
-  });
+});
 //Funcion de botones de la ventanan emergente
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const button1 = document.getElementById("button1");
     const floatingWindow = document.getElementById("floatingWindow");
 
-    button1.addEventListener("click", function() {
+    button1.addEventListener("click", function () {
         // Ocultar la ventana flotante al hacer clic en el botón de cerrar
         floatingWindow.style.display = "none";
     });
@@ -64,7 +64,7 @@ closeMenu.addEventListener("click", () => {
 /*Logica de la busqueda*/
 searchButton.addEventListener("click", () => {
     const searchTerm = searchInput.value.toLowerCase();
-    const productosFiltrados = productos.filter(producto => 
+    const productosFiltrados = productos.filter(producto =>
         producto.titulo.toLowerCase().includes(searchTerm) ||
         producto.categoria.nombre.toLowerCase().includes(searchTerm)
     );
@@ -114,24 +114,24 @@ function mostrarVentanaEmergenteUnaVez() {
 window.onload = mostrarVentanaEmergenteUnaVez;
 
 //Logica ventana
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var overlay = document.getElementById("overlay");
     var floatingWindow = document.getElementById("floatingWindow");
     var closeButton = document.getElementById("closeButton");
     var button1 = document.getElementById("button1");
     var button2 = document.getElementById("button2");
 
-    closeButton.addEventListener("click", function() {
-        alert("Acceso denegado, menor de edad.");
-        window.location.href = "https://www.google.com";
+    closeButton.addEventListener("click", function () {
+        alert("Acceso denegado");
+        floatingWindow.style.display = "block";
     });
 
-    button1.addEventListener("click", function() {
+    button1.addEventListener("click", function () {
         floatingWindow.style.display = "none";
         overlay.style.display = "none";
     });
 
-    button2.addEventListener("click", function() {
+    button2.addEventListener("click", function () {
         alert("Acceso denegado");
         window.location.href = "https://www.google.com";
     });
@@ -140,4 +140,3 @@ document.addEventListener("DOMContentLoaded", function() {
     overlay.style.display = "block";
     floatingWindow.style.display = "block";
 });
-

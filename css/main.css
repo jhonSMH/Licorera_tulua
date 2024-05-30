@@ -402,7 +402,7 @@ main {
     }
 }
 
-//funcion nueva
+/** Funcion nueva **/
 .overlay {
     position: fixed;
     top: 0;
@@ -412,9 +412,8 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
-
-/*estilos de la ventana flotante si es mayor de edad */
-/* Floating window styles */
+/** Estilos de la ventana flotante si es mayor de edad **/
+/** Floating window styles **/
 .floating-window {
     position: fixed;
     top: 50%;
@@ -424,9 +423,12 @@ main {
     border: 2px solid #000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    width: 300px;
+    max-width: 400px;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .close {
@@ -440,12 +442,13 @@ main {
 .image-container img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-/*Estilos para el la ventana flotante*/
+/** Estilos para el la ventana flotante **/
 .button1 {
     background-color: #26670c;
-    /* Color verde */
+    /** Color verde **/
     border: none;
     color: white;
     padding: 15px 32px;
@@ -456,13 +459,13 @@ main {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
-    /* Borde redondeado */
+    /** Borde redondeado **/
 }
 
-/* Estilo para el botón de menores de 18 */
+/** Estilo para el botón de menores de 18 **/
 .button2 {
     background-color: #707e7e;
-    /* Color rojo */
+    /** Color gris **/
     border: none;
     color: white;
     padding: 15px 32px;
@@ -473,10 +476,10 @@ main {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
-    /* Borde redondeado */
+    /** Borde redondeado **/
 }
 
-/*estilos boton de busqueda*/
+/** Estilos boton de busqueda **/
 .search-container {
     position: fixed;
     top: 20px;
@@ -485,7 +488,7 @@ main {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    /* Un valor menor que el de la ventana emergente */
+    /** Un valor menor que el de la ventana emergente **/
     background-color: var(--clr-white);
     padding: 0.5rem;
     border-radius: 5px;
@@ -528,10 +531,8 @@ overlay {
     background-color: var(--clr-main-light);
 }
 
-/*Ajuste de la imagen*/
-<style>
-
-/* Estilos para la ventana emergente */
+/** Ajuste de la imagen **/
+/** Estilos para la ventana emergente **/
 .floating-window {
     position: fixed;
     top: 50%;
@@ -542,13 +543,13 @@ overlay {
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 10000;
-    /* Z-index alto para que esté por encima de otros elementos */
+    /** Z-index alto para que esté por encima de otros elementos **/
     display: none;
-    /* Inicialmente oculto */
+    /** Inicialmente oculto **/
     max-width: 80%;
-    /* Ancho máximo */
+    /** Ancho máximo **/
     max-height: 80%;
-    /* Altura máxima */
+    /** Altura máxima **/
 }
 
 .image-container {
@@ -558,19 +559,18 @@ overlay {
 
 .image-container img {
     width: 50%;
-    /* Reducir el ancho al 50% */
+    /** Reducir el ancho al 50% **/
     height: auto;
-    /* Para mantener la proporción de la imagen */
+    /** Para mantener la proporción de la imagen **/
 }
 
-</style>
 
-/* Estilo general */
+/** Estilo general **/
 .disabled {
     display: none;
 }
 
-/* Estilo Modal */
+/** Estilo Modal **/
 .modal {
     display: none;
     position: fixed;
@@ -585,7 +585,7 @@ overlay {
     align-items: center;
 }
 
-/* Estilo de la tarjeta de crédito digital */
+/** Estilo de la tarjeta de crédito digital **/
 .modal-contenido {
     background-color: #fff;
     border-radius: 15px;
@@ -618,6 +618,7 @@ overlay {
     display: block;
     margin-bottom: 5px;
     color: #555;
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .modal-contenido .form-group input {
