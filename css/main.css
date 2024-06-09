@@ -659,3 +659,86 @@ overlay {
 .modal-contenido .cerrar:hover {
     color: #000;
 }
+
+
+/* Estilo para el contenedor de búsqueda y botón */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Ajusta la separación entre elementos */
+}
+
+/* Estilo para el botón */
+.user-button .btn {
+    background-color: #26670c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Para asegurarnos de que el enlace no tiene subrayado */
+}
+
+.user-button .btn:hover {
+    background-color: #26670c;
+}
+
+/* Estilos para el formulario de registro */
+.registro-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.registro-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #26670c;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #26670c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #26670c;
+}

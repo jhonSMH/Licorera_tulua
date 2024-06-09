@@ -124,3 +124,30 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+function displaySavedUsers() {
+    const userList = document.getElementById('userList');
+    if (!userList) return; // Evita errores si userList no está en la página
+
+    userList.innerHTML = '';
+    const users = JSON.parse(localStorage.getItem('userData')) || [];
+
+    if (users.length === 0) {
+        userList.innerHTML = '<p>No hay usuarios guardados.</p>';
+    } else {
+        users.forEach(user => {
+            const userElement = document.createElement('div');
+            userElement.innerHTML = `
+                <p><strong>Nombre:</strong> ${user.name}</p>
+                <p><strong>Edad:</strong> ${user.age}</p>
+                <p><strong>Teléfono:</strong> ${user.phone}</p>
+                <p><strong>Correo:</strong> ${user.email}</p>
+                <hr>
+            `;
+            userList.appendChild(userElement);
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    displaySavedUsers();
+});
